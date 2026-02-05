@@ -1,3 +1,7 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
 .navbar {
   background-color: #333;
   padding: 1rem;
