@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;             /* Aligns items horizontally */
+  justify-content: center;   /* Centers the menu */
+  list-style: none;          /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;            /* Adds space between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;     /* Removes underlines */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;            /* Changes color when you hover */
+}
