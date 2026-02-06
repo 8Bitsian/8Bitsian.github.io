@@ -1,40 +1,68 @@
+/*
+   Author: Imani Hollie
+   Date: 02/05/2026
+*/
+
 /* ==============================
-   Minimal Theme Variables
+   Theme Variables
    ============================== */
 :root {
-  --bg: #f7f7f7;      /* page background */
-  --text: #222;       /* body text color */
-  --heading: #111;    /* h1/h2/h3 color */
-  --primary: #0077cc; /* link/brand color */
-  --dark: #111;       /* header/footer background */
-  --border: #ddd;     /* card borders */
+  --bg: #f1f1f1;
+  --text: #0f0242;
+  --heading: #8c52ff;
+  --primary: #8c52ff;
+  --dark: #0f0242;
+  --border: #ffde59;
 
-  --radius: 6px;      /* rounded corners */
-  --space: 20px;      /* page side gutter */
-  --width: 900px;     /* max content width */
-  --header-h: 72px;   /* sticky header height */
+  --radius: 6px;
+  --space: 20px;
+  --width: 1000px;
+  --header-h: 72px;
 }
 
 /* ==============================
-   Base + Typography
+   Reset + Base
    ============================== */
 * { box-sizing: border-box; }
-body {
+
+body, h1, h2, h3, img, header, nav, main, footer {
   margin: 0;
-  font-family: system-ui, -apple-system, "Inter", sans-serif;
+  padding: 0;
+}
+
+body {
   background: var(--bg);
   color: var(--text);
+  font-family: "Quicksand", sans-serif;
   line-height: 1.6;
 }
-h1, h2, h3 { color: var(--heading); font-weight: 600; }
-a { color: var(--primary); text-decoration: none; }
-a:hover, a:focus-visible { text-decoration: underline; }
 
-/* Smooth anchor jumps + offset for sticky header */
-html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+img { width: 100%; display: block; }
 
-/* Center content column with side gutters */
-section {
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ==============================
+   Typography
+   ============================== */
+h1, h2, h3 {
+  font-family: "Press Start 2P", system-ui;
+  color: var(--heading);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+/* ==============================
+   Layout
+   ============================== */
+main, section {
   max-width: var(--width);
   margin: 40px auto;
   padding: 0 var(--space);
@@ -42,126 +70,141 @@ section {
 
 /* ==============================
    Header + Navigation
-   - Desktop: horizontal menu
-   - Mobile: hamburger toggles panel
    ============================== */
 .site-header {
-  position: sticky; top: 0;
+  position: sticky;
+  top: 0;
+  height: var(--header-h);
   background: var(--dark);
-  padding: 12px 0;
-  z-index: 1000;               /* stay above content */
+  display: flex;
+  align-items: center;
+  z-index: 1000;
 }
+
 .nav-container {
+  width: 100%;
   max-width: var(--width);
-  margin: 0 auto;
+  margin: auto;
   padding: 0 var(--space);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand, .nav-menu a { color: #fff; font-weight: 500; }
-
-/* Desktop nav row by default */
-.nav-menu { display: flex; gap: 20px; }
-.nav-menu a.active { text-decoration: underline; }
-
-/* Mobile toggle control (hidden checkbox) */
-.nav-checkbox {
-  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
-  clip: rect(0 0 0 0); clip-path: inset(50%); border: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Hamburger button (hidden on desktop) */
+.brand,
+.nav-menu a {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hamburger */
 .nav-toggle {
-  display: none; width: 44px; height: 44px; border: 0; background: none; color: #fff; cursor: pointer;
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
-.hamburger, .hamburger::before, .hamburger::after {
-  display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px;
-  position: relative; transition: transform 200ms ease, opacity 200ms ease;
-}
-.hamburger { margin: 0 auto; }
-.hamburger::before, .hamburger::after { content: ""; position: absolute; left: 0; }
-.hamburger::before { top: -7px; }
-.hamburger::after  { top:  7px; }
 
-/* ----- Mobile layout: dropdown panel ----- */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.hamburger::before { top: -6px; }
+.hamburger::after  { top: 6px; }
+
+/* Hidden checkbox */
+.nav-checkbox {
+  display: none;
+}
+
+/* Mobile nav */
 @media (max-width: 768px) {
-  .nav-toggle { display: grid; place-items: center; }
+  .nav-toggle { display: block; }
 
   .nav-menu {
-    position: absolute; top: var(--header-h); left: 0; right: 0;
+    position: absolute;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
     background: var(--dark);
-    flex-direction: column; gap: 12px;
+    flex-direction: column;
     padding: var(--space);
-    display: none; /* hidden until toggled */
+    display: none;
   }
 
-  /* Toggle animations + visibility */
-  .nav-checkbox:checked ~ .nav-toggle .hamburger { transform: rotate(45deg); }
-  .nav-checkbox:checked ~ .nav-toggle .hamburger::before { transform: translateY(7px) rotate(90deg); }
-  .nav-checkbox:checked ~ .nav-toggle .hamburger::after { opacity: 0; }
-  .nav-checkbox:checked ~ .nav-menu { display: flex; }
-}
-
-/* ----- Desktop lock-in: ensure nav is visible as a row ----- */
-@media (min-width: 769px) {
-  .nav-toggle { display: none !important; }
-  .nav-menu {
-    display: flex !important;
-    position: static !important;
-    padding: 0 !important;
-    background: transparent !important;
+  .nav-checkbox:checked ~ .nav-menu {
+    display: flex;
   }
 }
 
 /* ==============================
-   Hero / Buttons / Cards (kept minimal)
+   Hero / Cards
    ============================== */
-.hero { text-align: center; padding: 80px var(--space); background: #fff; }
-.hero .highlight { color: var(--primary); }
+.hero {
+  text-align: center;
+  padding: 60px var(--space);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
 
 .cta {
-  display: inline-block; margin-top: 20px;
-  padding: 10px 24px; background: var(--primary); color: #fff;
+  display: inline-block;
+  padding: 10px 24px;
+  margin-top: 16px;
+  background: var(--primary);
+  color: #fff;
   border-radius: var(--radius);
 }
 
 .grid {
-  display: grid; gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.grid div, .categories li, .project-card {
-  background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px;
+
+.grid > div {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: var(--radius);
 }
-.categories li { list-style: none; }
-.project-card { margin-bottom: 32px; }
 
 /* ==============================
-   Global Hanging Indent (ALL SCREENS)
-   - Pulls first line left while keeping later lines aligned
-   - SAFETY: clamp indent so it never exceeds section gutter (--space)
-   - Recommended: 16px (p), 12px (h2/h3)
-   ============================== */
-section p {
-  padding-left: min(16px, var(--space));
-  text-indent: calc(-1 * min(16px, var(--space)));
-  margin-top: 0.6em; margin-bottom: 0.9em;       /* tidy rhythm */
-}
-section h2, section h3 {
-  padding-left: min(12px, var(--space));
-  text-indent: calc(-1 * min(12px, var(--space)));
-}
-section h2 { margin-top: 1.25em; margin-bottom: 0.4em; }
-section h3 { margin-top: 1em;    margin-bottom: 0.3em; }
-
-/* ==============================
-   Footer + Accessibility helper
+   Footer
    ============================== */
 footer {
-  background: var(--dark); color: #fff;
-  text-align: center; padding: 24px 0; margin-top: 60px;
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 60px;
 }
 
-/* Visually hidden, screen-reader accessible */
+/* ==============================
+   Accessibility
+   ============================== */
 .sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
