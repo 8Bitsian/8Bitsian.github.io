@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+<head> <!-- Head contains metadata and resource links (not rendered content) -->
+  <meta charset="UTF-8">                                               <!-- Use UTF-8 encoding to support most characters -->
+  <title>Homepage</title>                                              <!-- Title shown in the browser tab -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive scaling on mobile -->
+  <link rel="stylesheet" href="styles.css">                            <!-- Load external stylesheet -->
 </head>
 
-<body>
-  <header>
+<body> <!-- Page content begins -->
+  <!-- Header: sticky dark bar with brand and navigation -->
+  <header class="site-header"> 
     <div class="nav-container">
-      <!-- Brand -->
-      <a href="index.html" class="brand">Imani Hollie</a>
+      <!-- Brand link -->
+      <a href="index.html" class="brand">8Bitsian</a> <!-- Clickable brand name to home -->
 
-      <!-- Hidden checkbox controls open/close (CSS-only) -->
+      <!-- Hidden checkbox stores menu open/close state (CSS-only toggle) -->
       <input type="checkbox" id="nav-toggle" class="nav-checkbox">
       
-      <!-- Label acts as the hamburger button -->
+      <!-- Label toggles the checkbox above; acts as the hamburger button on mobile -->
       <label for="nav-toggle" class="nav-toggle">
         <span class="sr-only">Menu</span>
-        <span class="hamburger"></span>
+        <span class="hamburger"></span> <!-- 3-bar icon; animates into an X -->
       </label>
       
-      <!-- Primary nav -->
+      <!-- Primary navigation links (right side on desktop; dropdown on mobile) -->
       <nav class="nav-menu" aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active">Home</a> <!-- Current page link styled as active -->
         <a href="about.html">About</a>
         <a href="portfolio.html">Projects</a>
         <a href="blog.html">Blog</a>
@@ -35,18 +36,19 @@
     </div>
   </header>
 
+  <!-- Hero Section: intro text and call-to-action buttons -->
   <section class="hero">
-    <h1>Introduction</h1>
+    <h1>Introduction</h1> <!-- Main page heading -->
     <p>Hello, I'm Imani Hollie (8Bitsian)</p>
     <p>I am a Computer Science major at Gwinnett Technical College documenting my journey learning software development.</p>
 
-    <h2>Call to Action</h2>
+    <h2>Call to Action</h2> <!-- Secondary heading introducing CTAs -->
     <p>You can look at either my blog to see my latest thoughts or my projects to see my latest work.</p>
-    
-    <a class="cta" href="blog.html">View My Blog</a>
     <a class="cta" href="portfolio.html">View My Projects</a>
+    <a class="cta" href="blog.html">View My Blog</a>
   </section>
-
+  
+  <!-- Footer with simple centered text -->
   <footer>
     <p>&copy; 2026 Imani Hollie. All rights reserved.</p>
   </footer>
