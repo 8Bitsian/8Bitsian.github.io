@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+<head> <!-- Head contains metadata and resource links (not rendered content) -->
+  <meta charset="UTF-8">                                               <!-- Use UTF-8 encoding to support most characters -->
+  <title>About</title>                                              <!-- Title shown in the browser tab -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive scaling on mobile -->
+  <link rel="stylesheet" href="styles.css">                            <!-- Load external stylesheet -->
 </head>
 
-<body>
-  <header>
+<body> <!-- Page content begins -->
+  <!-- Header: sticky dark bar with brand and navigation -->
+  <header class="site-header"> 
     <div class="nav-container">
-      <!-- Brand -->
-      <a href="index.html" class="brand">Imani Hollie</a>
+      <!-- Brand link -->
+      <a href="index.html" class="brand">8Bitsian</a> <!-- Clickable brand name to home -->
 
-      <!-- Hidden checkbox controls open/close (CSS-only) -->
+      <!-- Hidden checkbox stores menu open/close state (CSS-only toggle) -->
       <input type="checkbox" id="nav-toggle" class="nav-checkbox">
-
-      <!-- Label acts as the hamburger button -->
+      
+      <!-- Label toggles the checkbox above; acts as the hamburger button on mobile -->
       <label for="nav-toggle" class="nav-toggle">
         <span class="sr-only">Menu</span>
-        <span class="hamburger"></span>
+        <span class="hamburger"></span> <!-- 3-bar icon; animates into an X -->
       </label>
-
-      <!-- Primary nav -->
+      
+      <!-- Primary navigation links (right side on desktop; dropdown on mobile) -->
       <nav class="nav-menu" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html" class="active">About</a> <!-- Current page link styled as active -->
         <a href="portfolio.html">Projects</a>
         <a href="blog.html">Blog</a>
         <a href="resume.html">Resume</a>
@@ -35,6 +36,7 @@
     </div>
   </header>
 
+  <!-- Hero Section: intro text and call-to-action buttons -->
   <section class="hero">
     <h1>Background</h1>
     <p>Hello, I am Imani Hollie and I started going to college for computer science because of my dad. Since starting, I have grown to love programming and am now working towards finishing my associates degree by 2026.</p>
