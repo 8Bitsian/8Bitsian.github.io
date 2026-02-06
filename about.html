@@ -4,24 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
-  
+
 <body>
   <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="portfolio.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <!-- Brand -->
+      <a href="index.html" class="brand">Imani Hollie</a>
+
+      <!-- Hidden checkbox controls open/close (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+
+      <!-- Label acts as the hamburger button -->
+      <label for="nav-toggle" class="nav-toggle">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+      </label>
+
+      <!-- Primary nav -->
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
+  <section class="hero">
     <h1>Background</h1>
     <p>Hello, I am Imani Hollie and I started going to college for computer science because of my dad. Since starting, I have grown to love programming and am now working towards finishing my associates degree by 2026.</p>
 
