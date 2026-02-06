@@ -1,57 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>8BITSIAN | HOME</title>
+  <!--
+    Author: Imani Hollie
+    Date: 02/05/2026
+    File: index.html
+    Home Page: This will include information about 8 Bit Software and its mission statement
+    Mission Statement: You can do whatever you put your mind to.
+  -->
+  
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="8-Bit Software is a software developer that shows anyone can be a programmer.">
 
-<head> <!-- Head contains metadata and resource links (not rendered content) -->
-  <meta charset="UTF-8">                                               <!-- Use UTF-8 encoding to support most characters -->
-  <title>Homepage</title>                                              <!-- Title shown in the browser tab -->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive scaling on mobile -->
-  <link rel="stylesheet" href="styles.css">                            <!-- Load external stylesheet -->
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
-<body> <!-- Page content begins -->
-  <!-- Header: sticky dark bar with brand and navigation -->
-  <header class="site-header"> 
-    <div class="nav-container">
-      <!-- Brand link -->
-      <a href="index.html" class="brand">8Bitsian</a> <!-- Clickable brand name to home -->
+<body>
+<!-- Skip link for keyboard users -->
+  <a class="sr-only" href="#main">Skip to content</a>
 
-      <!-- Hidden checkbox stores menu open/close state (CSS-only toggle) -->
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox">
-      
-      <!-- Label toggles the checkbox above; acts as the hamburger button on mobile -->
-      <label for="nav-toggle" class="nav-toggle">
-        <span class="sr-only">Menu</span>
-        <span class="hamburger"></span> <!-- 3-bar icon; animates into an X -->
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <!-- Brand (you can swap the text for a logo image if you prefer) -->
+      <a href="#home" class="brand" aria-label="Go to home">
+        <!-- Example brand icon (optional) -->
+        <!-- <img src="images/icon-star.svg" alt="" width="20" height="20" style="vertical-align: -3px; margin-right: 8px;"> -->
+        Imani Hollie
+      </a>
+
+      <!-- Hidden checkbox controls the menu (no JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true" />
+
+      <!-- Mobile toggle button -->
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="main-menu" aria-expanded="false">
+        <span class="hamburger"></span>
       </label>
-      
-      <!-- Primary navigation links (right side on desktop; dropdown on mobile) -->
-      <nav class="nav-menu" aria-label="Primary">
-        <a href="index.html" class="active">Home</a> <!-- Current page link styled as active -->
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+
+      <!-- Navigation links -->
+      <nav id="main-menu" class="nav-menu" aria-label="Main">
+        <a href="#home" class="active">
+          <img src="images/icon-home.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          Home
+        </a>
+        <a href="#about">
+          <img src="images/icon-user.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          About
+        </a>
+        <a href="#projects">
+          <img src="images/icon-projects.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          Projects
+        </a>
+        <a href="#blog">
+          <img src="images/icon-blog.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          About
+        </a>
+        <a href="#resume">
+          <img src="images/icon-resume.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          About
+        </a>
+        <a href="#contact">
+          <img src="images/icon-mail.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+          Contact
+        </a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section: intro text and call-to-action buttons -->
-  <section class="hero">
-    <h1>Introduction</h1> <!-- Main page heading -->
-    <p>Hello, I'm Imani Hollie (8Bitsian)</p>
-    <p>I am a Computer Science major at Gwinnett Technical College documenting my journey learning software development.</p>
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <img src="images/icon-hero-badge.svg" alt="" width="64" height="64" style="margin: 0 auto 16px;">
+      <h1 id="hero-title">Hello, I’m Imani.</h1>
+      <p style="max-width: 60ch; margin: 12px auto 0;">
+        Software Developer in the making and sharing her journey to greatness.
+      </p>
+      <a href="#projects" class="cta">
+        <img src="images/icon-rocket.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+        See Projects
+      </a>
+    </section>
 
-    <h2>Call to Action</h2> <!-- Secondary heading introducing CTAs -->
-    <p>You can look at either my blog to see my latest thoughts or my projects to see my latest work.</p>
-    <a class="cta" href="portfolio.html">View My Projects</a>
-    <a class="cta" href="blog.html">View My Blog</a>
-  </section>
-  
-  <!-- Footer with simple centered text -->
-  <footer>
-    <p>&copy; 2026 Imani Hollie. All rights reserved.</p>
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <div class="grid" role="list">
+        <!-- Card 1 -->
+        <div role="listitem">
+          <img src="images/icon-palette.svg" alt="" width="32" height="32" style="margin-bottom: 10px;">
+          <h3>Collage Series</h3>
+          <p>Mixed-media collages exploring color, texture, and personal history.</p>
+          <p><a href="#" aria-label="View Collage Series">View details →</a></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div role="listitem">
+          <img src="images/icon-code.svg" alt="" width="32" height="32" style="margin-bottom: 10px;">
+          <h3>Web Portfolio</h3>
+          <p>A responsive site using a variable-driven theme and accessible navigation.</p>
+          <p><a href="#" aria-label="View Web Portfolio">View details →</a></p>
+        </div>
+
+        <!-- Card 3 -->
+        <div role="listitem">
+          <img src="images/icon-a11y.svg" alt="" width="32" height="32" style="margin-bottom: 10px;">
+          <h3>ASL Resources</h3>
+          <p>Curated beginner-friendly resources for students learning ASL.</p>
+          <p><a href="#" aria-label="View ASL Resources">View details →</a></p>
+        </div>
+
+        <!-- Card 4 -->
+        <div role="listitem">
+          <img src="images/icon-book.svg" alt="" width="32" height="32" style="margin-bottom: 10px;">
+          <h3>Reading List</h3>
+          <p>Favorites like <em>Carmilla</em>, <em>Frankenstein</em>, and more gothic classics.</p>
+          <p><a href="#" aria-label="View Reading List">View details →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I’m a college student and working towards my associates in Computer Science.
+        I grew up in Georgia and have deep roots in the creative community - but recently I've been hyperfocused on coding.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        <img src="images/icon-mail.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+        Email: <a href="mailto:hello@example.com">hello@example.com</a>
+      </p>
+      <p>
+        <img src="images/icon-pin.svg" alt="" width="18" height="18" style="vertical-align: -3px; margin-right: 6px;">
+        Atlanta, GA
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>
+      <img src="images/icon-heart.svg" alt="" width="16" height="16" style="vertical-align: -3px; margin-right: 6px;">
+      &copy; <span id="year"></span> Imani Hollie. All rights reserved.
+      &nbsp;•&nbsp;
+      <a href="#home">Back to top</a>
+    </p>
   </footer>
+
+  <!-- (Optional) Tiny inline script to set year; safe without JS too -->
+  <script>
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
 </body>
-  
 </html>
