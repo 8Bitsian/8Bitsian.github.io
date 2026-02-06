@@ -100,6 +100,10 @@ section {
   gap: 20px;                                      /* space between links */
 }
 
+.nav-menu a.active {
+   text-decoration: underline;
+}
+
 /* ===============================
    Mobile Navigation (CSS-only)
    Purpose: Show a toggle button and collapse the menu into a vertical panel.
