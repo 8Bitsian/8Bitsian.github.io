@@ -11,16 +11,20 @@
 <body>
   <header>
     <div class="nav-container">
+      <!-- Brand -->
       <a href="index.html" class="brand">Imani Hollie</a>
 
-      <!-- CSS-only hamburger toggle -->
+      <!-- Hidden checkbox controls open/close (CSS-only) -->
       <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+      
+      <!-- Label acts as the hamburger button -->
       <label for="nav-toggle" class="nav-toggle">
         <span class="sr-only">Menu</span>
         <span class="hamburger"></span>
       </label>
-
-      <nav class="nav-menu">
+      
+      <!-- Primary nav -->
+      <nav class="nav-menu" aria-label="Primary">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Projects</a>
