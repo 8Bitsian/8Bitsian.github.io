@@ -1,279 +1,167 @@
-/* ===============================
-   Core Variables (minimal)
-   Purpose: Centralize theme + layout settings in one place.
-   Keeping the set small reduces runtime variable resolution.
-   =============================== */
-
+/* ==============================
+   Minimal Theme Variables
+   ============================== */
 :root {
-  --bg: #f7f7f7;            /* page background */
-  --text: #222;             /* default text color */
-  --heading: #111;          /* headings color */
-  --primary: #0077cc;       /* brand/link color */
-  --dark: #111;             /* dark header/footer background */
-  --border: #ddd;           /* subtle card borders */
+  --bg: #f7f7f7;      /* page background */
+  --text: #222;       /* body text color */
+  --heading: #111;    /* h1/h2/h3 color */
+  --primary: #0077cc; /* link/brand color */
+  --dark: #111;       /* header/footer background */
+  --border: #ddd;     /* card borders */
 
-  --radius: 6px;            /* standard rounded corners */
-  --space: 20px;            /* base horizontal padding/gutters */
-
-  --width: 900px;           /* max content width */
-  --header-h: 72px;         /* sticky header height (used for scroll padding) */
+  --radius: 6px;      /* rounded corners */
+  --space: 20px;      /* page side gutter */
+  --width: 900px;     /* max content width */
+  --header-h: 72px;   /* sticky header height */
 }
 
-/* ===============================
-   Base
-   Purpose: Normalize defaults and set global typography/colors.
-   =============================== */
-
-* {
-  box-sizing: border-box;   /* predictable sizing for all elements */
-}
-
+/* ==============================
+   Base + Typography
+   ============================== */
+* { box-sizing: border-box; }
 body {
-  margin: 0;                                    /* remove default margin */
-  font-family: system-ui, -apple-system, "Inter", sans-serif; /* fast system font with Inter fallback */
+  margin: 0;
+  font-family: system-ui, -apple-system, "Inter", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;                              /* comfortable reading */
+  line-height: 1.6;
 }
+h1, h2, h3 { color: var(--heading); font-weight: 600; }
+a { color: var(--primary); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
 
-h1, h2, h3 {
-  color: var(--heading);
-  font-weight: 600;                               /* slightly bold headings */
-}
+/* Smooth anchor jumps + offset for sticky header */
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
 
-a {
-  color: var(--primary);
-  text-decoration: none;                          /* remove default underline */
-}
-
-a:hover,
-a:focus-visible {
-  text-decoration: underline;                     /* restore underline on hover/focus for clarity and a11y */
-}
-
-/* ===============================
-   Scrolling
-   Purpose: Smooth anchor jumps and prevent sticky header overlap.
-   =============================== */
-
-html {
-  scroll-behavior: smooth;                        /* smooth scroll to anchors */
-  scroll-padding-top: var(--header-h);            /* offset for sticky header so targets aren't hidden */
-}
-
+/* Center content column with side gutters */
 section {
-  max-width: var(--width);                        /* center content in a readable column */
-  margin: 40px auto;                              /* vertical rhythm + horizontal centering */
-  padding: 0 var(--space);                        /* side gutters for small screens */
+  max-width: var(--width);
+  margin: 40px auto;
+  padding: 0 var(--space);
 }
 
-/* ===============================
-   Header & Navigation (desktop-first)
-   Purpose: Lightweight sticky header with a simple horizontal nav.
-   =============================== */
-
+/* ==============================
+   Header + Navigation
+   - Desktop: horizontal menu
+   - Mobile: hamburger toggles panel
+   ============================== */
 .site-header {
-  position: sticky;                               /* stays at the top while scrolling */
-  top: 0;
-  background: var(--dark);                        /* solid dark (no blur for performance) */
-  padding: 12px 0;                                /* vertical padding */
-  z-index: 10;                                    /* sit above page content */
+  position: sticky; top: 0;
+  background: var(--dark);
+  padding: 12px 0;
+  z-index: 1000;               /* stay above content */
 }
-
 .nav-container {
   max-width: var(--width);
   margin: 0 auto;
   padding: 0 var(--space);
-  display: flex;                                  /* align brand + menu on one line */
-  align-items: center;
-  justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between;
 }
+.brand, .nav-menu a { color: #fff; font-weight: 500; }
 
-.brand,
-.nav-menu a {
-  color: #fff;                                    /* white text on dark header */
-  font-weight: 500;
-}
+/* Desktop nav row by default */
+.nav-menu { display: flex; gap: 20px; }
+.nav-menu a.active { text-decoration: underline; }
 
-.nav-menu {
-  display: flex;
-  gap: 20px;                                      /* space between links */
-}
-
-.nav-menu a.active {
-   text-decoration: underline;
-}
-
-/* ===============================
-   Mobile Navigation (CSS-only)
-   Purpose: Show a toggle button and collapse the menu into a vertical panel.
-   Implementation uses a hidden checkbox + label (no JS).
-   =============================== */
-
-/* 1) Hidden checkbox controls open/close state via sibling selectors */
+/* Mobile toggle control (hidden checkbox) */
 .nav-checkbox {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  border: 0;
+  position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); border: 0;
 }
 
-/* 2) The label acts as the hamburger button */
+/* Hamburger button (hidden on desktop) */
 .nav-toggle {
-  display: none;                                  /* hidden on desktop */
-  width: 44px;
-  height: 44px;
-  border: 0;
-  background: none;
-  color: #fff;
-  cursor: pointer;
+  display: none; width: 44px; height: 44px; border: 0; background: none; color: #fff; cursor: pointer;
 }
-
-/* 3) The three-bar hamburger icon */
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: #fff;
-  border-radius: 2px;
-  position: relative;
-  transition: transform 200ms ease, opacity 200ms ease;
+.hamburger, .hamburger::before, .hamburger::after {
+  display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px;
+  position: relative; transition: transform 200ms ease, opacity 200ms ease;
 }
 .hamburger { margin: 0 auto; }
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
+.hamburger::before, .hamburger::after { content: ""; position: absolute; left: 0; }
 .hamburger::before { top: -7px; }
 .hamburger::after  { top:  7px; }
 
-/* 4) Mobile layout: show hamburger; turn menu into a panel */
+/* ----- Mobile layout: dropdown panel ----- */
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: grid;                                /* show toggle on small screens */
-    place-items: center;
-  }
+  .nav-toggle { display: grid; place-items: center; }
 
   .nav-menu {
-    position: absolute;                           /* panel below header */
-    top: var(--header-h);
-    left: 0;
-    right: 0;
+    position: absolute; top: var(--header-h); left: 0; right: 0;
     background: var(--dark);
-    flex-direction: column;                       /* vertical links */
+    flex-direction: column; gap: 12px;
     padding: var(--space);
-    gap: 12px;
-    display: none;                                /* hidden by default */
+    display: none; /* hidden until toggled */
   }
 
-  /* 5) When checkbox is checked, morph icon into “X” */
-  .nav-checkbox:checked ~ .nav-toggle .hamburger {
-    transform: rotate(45deg);
-  }
-  .nav-checkbox:checked ~ .nav-toggle .hamburger::before {
-    transform: translateY(7px) rotate(90deg);
-  }
-  .nav-checkbox:checked ~ .nav-toggle .hamburger::after {
-    opacity: 0;
-  }
+  /* Toggle animations + visibility */
+  .nav-checkbox:checked ~ .nav-toggle .hamburger { transform: rotate(45deg); }
+  .nav-checkbox:checked ~ .nav-toggle .hamburger::before { transform: translateY(7px) rotate(90deg); }
+  .nav-checkbox:checked ~ .nav-toggle .hamburger::after { opacity: 0; }
+  .nav-checkbox:checked ~ .nav-menu { display: flex; }
+}
 
-  /* 6) Reveal the menu when checkbox is checked */
-  .nav-checkbox:checked ~ .nav-menu {
-    display: flex;
+/* ----- Desktop lock-in: ensure nav is visible as a row ----- */
+@media (min-width: 769px) {
+  .nav-toggle { display: none !important; }
+  .nav-menu {
+    display: flex !important;
+    position: static !important;
+    padding: 0 !important;
+    background: transparent !important;
   }
 }
 
-/* ===============================
-   Hero
-   Purpose: Prominent intro section with centered content.
-   =============================== */
-
-.hero {
-  text-align: center;
-  padding: 80px var(--space);                     /* generous vertical padding */
-  background: #fff;
-}
-
-.hero .highlight {
-  color: var(--primary);                          /* emphasize key word/phrase */
-}
-
-/* ===============================
-   Buttons
-   Purpose: Simple primary call-to-action styling.
-   =============================== */
+/* ==============================
+   Hero / Buttons / Cards (kept minimal)
+   ============================== */
+.hero { text-align: center; padding: 80px var(--space); background: #fff; }
+.hero .highlight { color: var(--primary); }
 
 .cta {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 24px;
-  background: var(--primary);
-  color: #fff;
+  display: inline-block; margin-top: 20px;
+  padding: 10px 24px; background: var(--primary); color: #fff;
   border-radius: var(--radius);
 }
-
-/* ===============================
-   Cards & Grids
-   Purpose: Reusable card look and responsive grid for items/stack.
-   =============================== */
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); /* responsive columns */
-  gap: 16px;
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
-
-.grid div,
-.categories li,
-.project-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
+.grid div, .categories li, .project-card {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px;
 }
+.categories li { list-style: none; }
+.project-card { margin-bottom: 32px; }
 
-.categories li {
-  list-style: none;                               /* clean list appearance */
+/* ==============================
+   Global Hanging Indent (ALL SCREENS)
+   - Pulls first line left while keeping later lines aligned
+   - SAFETY: clamp indent so it never exceeds section gutter (--space)
+   - Recommended: 16px (p), 12px (h2/h3)
+   ============================== */
+section p {
+  padding-left: min(16px, var(--space));
+  text-indent: calc(-1 * min(16px, var(--space)));
+  margin-top: 0.6em; margin-bottom: 0.9em;       /* tidy rhythm */
 }
-
-.project-card {
-  margin-bottom: 32px;                            /* space between cards vertically */
+section h2, section h3 {
+  padding-left: min(12px, var(--space));
+  text-indent: calc(-1 * min(12px, var(--space)));
 }
+section h2 { margin-top: 1.25em; margin-bottom: 0.4em; }
+section h3 { margin-top: 1em;    margin-bottom: 0.3em; }
 
-/* ===============================
-   Footer
-   Purpose: Simple site footer that mirrors the header style.
-   =============================== */
-
+/* ==============================
+   Footer + Accessibility helper
+   ============================== */
 footer {
-  background: var(--dark);
-  color: #fff;
-  text-align: center;
-  padding: 24px 0;
-  margin-top: 60px;
+  background: var(--dark); color: #fff;
+  text-align: center; padding: 24px 0; margin-top: 60px;
 }
 
-/* ===============================
-   Screen-reader-only helper
-   Purpose: Visually hide elements while keeping them available to AT.
-   =============================== */
+/* Visually hidden, screen-reader accessible */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
 }
