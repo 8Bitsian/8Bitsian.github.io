@@ -4,30 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <a href="index.html" class="brand">Imani Hollie</a>
+
+      <!-- CSS-only hamburger toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+      <label for="nav-toggle" class="nav-toggle">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
+  <section class="hero">
     <h1>Introduction</h1>
     <p>Hello, I'm Imani Hollie (8Bitsian)</p>
     <p>I am a Computer Science major at Gwinnett Technical College documenting my journey learning software development.</p>
 
     <h2>Call to Action</h2>
     <p>You can look at either my blog to see my latest thoughts or my projects to see my latest work.</p>
+    
     <a class="cta" href="blog.html">View My Blog</a>
     <a class="cta" href="portfolio.html">View My Projects</a>
   </section>
