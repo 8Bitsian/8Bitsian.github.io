@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles.css">
+<head> <!-- Head contains metadata and resource links (not rendered content) -->
+  <meta charset="UTF-8">                                               <!-- Use UTF-8 encoding to support most characters -->
+  <title>Contact</title>                                               <!-- Title shown in the browser tab -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive scaling on mobile -->
+  <link rel="stylesheet" href="styles.css">                            <!-- Load external stylesheet -->
 </head>
 
-<body>
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+<body> <!-- Page content begins -->
+  <!-- Header: sticky dark bar with brand and navigation -->
+  <header class="site-header"> 
+    <div class="nav-container">
+      <!-- Brand link -->
+      <a href="index.html" class="brand">8Bitsian</a> <!-- Clickable brand name to home -->
+
+      <!-- Hidden checkbox stores menu open/close state (CSS-only toggle) -->
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+      
+      <!-- Label toggles the checkbox above; acts as the hamburger button on mobile -->
+      <label for="nav-toggle" class="nav-toggle">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span> <!-- 3-bar icon; animates into an X -->
+      </label>
+      
+      <!-- Primary navigation links (right side on desktop; dropdown on mobile) -->
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" class="active">Contact</a> <!-- Current page link styled as active -->
+      </nav>
+    </div>
   </header>
 
-  <section>
+  <!-- Hero Section: intro text and call-to-action buttons -->
+  <section class="hero">
     <h1>Contact</h1>
     <p>Connect with me:</p>
     <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a><br>
