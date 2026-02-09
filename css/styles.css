@@ -13,6 +13,7 @@
   --primary: #8c52ff;
   --dark: #0f0242;
   --border: #ffde59;
+  --logo-color: #ffde59;
 
   --radius: 6px;
   --space: 20px;
@@ -89,6 +90,10 @@ main, section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.change-color {
+   fill: var(--logo-color);
 }
 
 .brand,
