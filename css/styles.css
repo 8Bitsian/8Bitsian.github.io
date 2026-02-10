@@ -152,49 +152,55 @@ main, section {
 }
 
 /* ==============================
-   Logos and Icons
+   Logos & Icons (Masking external SVGs)
    ============================== */
 
-.logo, .icon { color: var(--gold); }
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* Base masked icon/brand — uses the SVG as a mask and paints with --logo-color */
+.icon, .logo {
+  --size: 18px;                        /* override per element if needed */
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  background-color: var(--gold);
   line-height: 0;
+
+  /* Mask setup */
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
 
+/* Align icons with nav text */
 .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
   vertical-align: -3px;
   margin-right: 6px;
 }
 
-/* Normalize inline SVG sizing (scales with font-size by default) */
-.logo svg, .icon svg {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-}
+/* Map each icon class to your images.
+   NOTE: CSS file is in /css, images are in /images → use ../images/... */
+.icon--home     { -webkit-mask-image: url("../images/icon-home.svg");      mask-image: url("../images/icon-home.svg"); }
+.icon--user     { -webkit-mask-image: url("../images/icon-user.svg");      mask-image: url("../images/icon-user.svg"); }
+.icon--projects { -webkit-mask-image: url("../images/icon-projects.svg");  mask-image: url("../images/icon-projects.svg"); }
+.icon--blog     { -webkit-mask-image: url("../images/icon-blog.svg");      mask-image: url("../images/icon-blog.svg"); }
+.icon--resume   { -webkit-mask-image: url("../images/icon-resume.svg");    mask-image: url("../images/icon-resume.svg"); }
+.icon--mail     { -webkit-mask-image: url("../images/icon-mail.svg");      mask-image: url("../images/icon-mail.svg"); }
+.icon--vlog     { -webkit-mask-image: url("../images/icon-vlog.svg");      mask-image: url("../images/icon-vlog.svg"); }
+.icon--code     { -webkit-mask-image: url("../images/icon-code.svg");      mask-image: url("../images/icon-code.svg"); }
+.icon--website  { -webkit-mask-image: url("../images/icon-website.svg");   mask-image: url("../images/icon-website.svg"); }
+.icon--book     { -webkit-mask-image: url("../images/icon-book.svg");      mask-image: url("../images/icon-book.svg"); }
 
-/* Inherit color for common shapes */
-.logo svg path, .logo svg rect,
-.logo svg circle, .logo svg polygon,
-.icon svg path, .icon svg rect,
-.icon svg circle, .icon svg polygon {
-  fill: currentColor;
-  stroke: currentColor;
-}
+/* Brand logo — point to your actual logo file name */
+.logo--brand    { --size: 32px; -webkit-mask-image: url("../images/logo.svg"); mask-image: url("../images/logo.svg"); }
 
-/* Utility sizes (optional) */
-.icon-18 { font-size: 18px; }
-.icon-24 { font-size: 24px; }
-.icon-32 { font-size: 32px; }
-.logo-24 { font-size: 24px; }
-.logo-32 { font-size: 32px; }
+/* Optional size utilities */
+.icon-18 { --size: 18px; }
+.icon-24 { --size: 24px; }
+.icon-32 { --size: 32px; }
+.logo-24 { --size: 24px; }
+.logo-32 { --size: 32px; }
 
 /* ==============================
    Hero / Cards
