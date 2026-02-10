@@ -187,10 +187,6 @@ main, section {
 .icon--blog     { -webkit-mask-image: url("../images/icon-blog.svg");      mask-image: url("../images/icon-blog.svg"); }
 .icon--resume   { -webkit-mask-image: url("../images/icon-resume.svg");    mask-image: url("../images/icon-resume.svg"); }
 .icon--mail     { -webkit-mask-image: url("../images/icon-mail.svg");      mask-image: url("../images/icon-mail.svg"); }
-.icon--vlog     { -webkit-mask-image: url("../images/icon-vlog.svg");      mask-image: url("../images/icon-vlog.svg"); }
-.icon--code     { -webkit-mask-image: url("../images/icon-code.svg");      mask-image: url("../images/icon-code.svg"); }
-.icon--website  { -webkit-mask-image: url("../images/icon-website.svg");   mask-image: url("../images/icon-website.svg"); }
-.icon--book     { -webkit-mask-image: url("../images/icon-book.svg");      mask-image: url("../images/icon-book.svg"); }
 
 /* Brand logo — point to your actual logo file name */
 .logo--brand    { --size: 32px; -webkit-mask-image: url("../images/logo.svg"); mask-image: url("../images/logo.svg"); }
