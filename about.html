@@ -9,68 +9,96 @@
 </head>
 
 <body> <!-- Page content begins -->
-  <!-- Header: sticky dark bar with brand and navigation -->
-  <header class="site-header"> 
+  <!-- Header / Navigation -->
+  <header class="site-header">
     <div class="nav-container">
-      <!-- Brand link -->
-      <a href="index.html" class="brand">8Bitsian</a> <!-- Clickable brand name to home -->
+      <!-- Brand -->
+      <a href="#home" class="brand" aria-label="Go to home">
+        <span class="logo logo--brand logo-32" aria-hidden="true"></span>
+        <span class="sr-only">8-Bitsian</span>
+      </a>
 
-      <!-- Hidden checkbox stores menu open/close state (CSS-only toggle) -->
-      <input type="checkbox" id="nav-toggle" class="nav-checkbox">
-      
-      <!-- Label toggles the checkbox above; acts as the hamburger button on mobile -->
-      <label for="nav-toggle" class="nav-toggle">
-        <span class="sr-only">Menu</span>
-        <span class="hamburger"></span> <!-- 3-bar icon; animates into an X -->
+      <!-- Mobile toggle (no JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle"
+             aria-label="Toggle navigation" aria-controls="main-menu" aria-expanded="false">
+        <span class="hamburger"></span>
       </label>
-      
-      <!-- Primary navigation links (right side on desktop; dropdown on mobile) -->
-      <nav class="nav-menu" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a> <!-- Current page link styled as active -->
-        <a href="portfolio.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+
+      <!-- Navigation links -->
+      <nav id="main-menu" class="nav-menu" aria-label="Main">
+        <a href="#home" class="nav-link">
+          <span class="icon icon--home icon-18" aria-hidden="true"></span> Home
+        </a>
+        <a href="#about" class="nav-link">
+          <span class="icon icon--user icon-18" aria-hidden="true"></span> About
+        </a>
+        <a href="#projects" class="nav-link">
+          <span class="icon icon--projects icon-18" aria-hidden="true"></span> Projects
+        </a>
+        <a href="#blog" class="nav-link">
+          <span class="icon icon--blog icon-18" aria-hidden="true"></span> Articles
+        </a>
+        <a href="#resume" class="nav-link">
+          <span class="icon icon--resume icon-18" aria-hidden="true"></span> Resume
+        </a>
+        <a href="#contact" class="nav-link">
+          <span class="icon icon--mail icon-18" aria-hidden="true"></span> Contact
+        </a>
       </nav>
     </div>
   </header>
-
-  <!-- Hero Section: intro text and call-to-action buttons -->
-  <section class="hero">
-    <h1>Background</h1>
-    <p>Hello, I am Imani Hollie and I started going to college for computer science because of my dad. Since starting, I have grown to love programming and am now working towards finishing my associates degree by 2026.</p>
-
-    <h2>Education</h2>
-    <ul>
-      <li>Computer Science - Gwinnett Technical College</li>
-      <li>Expected Graduation: December 2026</li>
-      <li>Relevant Coursework: Data Stuctures, Algorithms, Databases, Web Development, Java Programming, C++ Programming, Python Programming</li>
-    </ul>
-
-    <h2>Acheivements</h2>
-    <ul>
-      <li>Student Ambassador for Phi Class</li>
-      <li>Memeber of Student Government Association</li>
-      <li>40+ hours of volunteer work</li>
-    </ul>
-
-    <h2>Tech Stack</h2>
-    <div class="grid">
-      <div>Python</div>
-      <div>Java</div>
-      <div>C++</div>
-      <div>HTML/CSS</div>
-      <div>JavaScript</div>
-      <div>Git & GitHub</div>
-      <div>JetBrains IDEs</div>
-      <div>VS Code</div>
-    </div> 
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Imani Hollie. All rights reserved.</p>
-  </footer>
-</body>
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section: intro text and call-to-action buttons -->
+    <section class="hero">
+      <h1>Background</h1>
+      <p>Hello, I am Imani Hollie and I started going to college for computer science because of my dad. Since starting, I have grown to love programming and am now working towards finishing my associates degree by 2026.</p>
   
+      <h2>Education</h2>
+      <ul>
+        <li>Computer Science - Gwinnett Technical College</li>
+        <li>Expected Graduation: December 2026</li>
+        <li>Relevant Coursework: Data Stuctures, Algorithms, Databases, Web Development, Java Programming, C++ Programming, Python Programming</li>
+      </ul>
+  
+      <h2>Acheivements</h2>
+      <ul>
+        <li>Student Ambassador for Phi Class</li>
+        <li>Memeber of Student Government Association</li>
+        <li>40+ hours of volunteer work</li>
+      </ul>
+    </section>
+
+    <!-- Action Cards -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="grid" role="list">
+        <div class="grid">
+          <div>Python</div>
+          <div>Java</div>
+          <div>C++</div>
+          <div>HTML/CSS</div>
+          <div>JavaScript</div>
+          <div>Git & GitHub</div>
+          <div>JetBrains IDEs</div>
+          <div>VS Code</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="section-footer text-center">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Imani Hollie. All Rights Reserved.</p>
+      <p><a href="mailto:8Bitsian@gmail.com">8Bitsian@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Tiny inline script to set year (safe without JS) -->
+  <script>
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
