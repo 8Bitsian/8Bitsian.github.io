@@ -17,33 +17,33 @@
   --space: 20px;
   --width: 1000px;
   --header-h: 75px;
+
+  /* Small utilities */
+  --gap: 15px;
 }
 
 /* ==============================
    Reset + Base
    ============================== */
 * { box-sizing: border-box; }
-
-body, h1, h2, h3, img, header, nav, main, footer {
-  margin: 0;
-  padding: 0;
-}
+body, h1, h2, h3, img, header, nav, main, footer, p { margin: 0; padding: 0; }
 
 body {
   background: var(--white);
   color: var(--dark);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
 img { width: 100%; display: block; }
 
-a {
-  color: var(--purple);
-  text-decoration: none;
-}
-
+a { color: var(--purple); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
 
 /* ==============================
    Typography
@@ -56,7 +56,7 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
+h2 { font-size: 1.5rem; margin-top: 10px; }
 h3 { font-size: 1.25rem; }
 
 /* ==============================
@@ -67,6 +67,14 @@ main, section {
   margin: 40px auto;
   padding: 0 var(--space);
 }
+
+.max-60ch { max-width: 60ch; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-12 { margin-top: 12px; }
+.mt-16 { margin-top: 16px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-16 { margin-bottom: 16px; }
+.center-block { display: block; margin-left: auto; margin-right: auto; }
 
 /* ==============================
    Header + Navigation
@@ -96,36 +104,16 @@ main, section {
   font-weight: 600;
 }
 
-/* Navigation menu */
-.nav-menu {
-  display: flex;
-  gap: 20px;
-}
+.nav-menu { display: flex; gap: 20px; }
 
 /* Hamburger */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
+.nav-toggle { display: none; background: none; border: 0; cursor: pointer; }
 .hamburger, .hamburger::before, .hamburger::after {
-  width: 25px;
-  height: 5px;
-  background: var(--white);
-  display: block;
-  position: relative;
+  width: 25px; height: 5px; background: var(--white);
+  display: block; position: relative;
 }
-
-.hamburger::before, .hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
+.hamburger::before, .hamburger::after { content: ""; position: absolute; left: 0; }
 .hamburger::before { top: -6px; }
-
 .hamburger::after  { top: 6px; }
 
 /* Hidden checkbox */
@@ -134,37 +122,26 @@ main, section {
 /* Mobile nav */
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
-
   .nav-menu {
-    position: absolute;
-    top: var(--header-h);
-    left: 0;
-    right: 0;
-    background: var(--dark);
-    flex-direction: column;
-    padding: var(--space);
+    position: absolute; top: var(--header-h); left: 0; right: 0;
+    background: var(--dark); flex-direction: column; padding: var(--space);
     display: none;
   }
-
-  .nav-checkbox:checked ~ .nav-menu {
-    display: flex;
-  }
+  .nav-checkbox:checked ~ .nav-menu { display: flex; }
 }
 
 /* ==============================
    Logos & Icons (Masking external SVGs)
    ============================== */
-
-/* Base masked icon/brand — uses the SVG as a mask and paints with --logo-color */
+/* Base masked icon/brand — paints with --gold */
 .icon, .logo {
-  --size: 18px;                        /* override per element if needed */
+  --size: 18px;
   width: var(--size);
   height: var(--size);
   display: inline-block;
   background-color: var(--gold);
   line-height: 0;
 
-  /* Mask setup */
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
@@ -174,24 +151,24 @@ main, section {
 }
 
 /* Align icons with nav text */
-.icon {
-  vertical-align: -3px;
-  margin-right: 6px;
-}
+.icon { vertical-align: -3px; margin-right: 6px; }
 
-/* Map each icon class to your images.
-   NOTE: CSS file is in /css, images are in /images → use ../images/... */
-.icon--home     { -webkit-mask-image: url("../images/icon-home.svg");      mask-image: url("../images/icon-home.svg"); }
-.icon--user     { -webkit-mask-image: url("../images/icon-user.svg");      mask-image: url("../images/icon-user.svg"); }
-.icon--projects { -webkit-mask-image: url("../images/icon-projects.svg");  mask-image: url("../images/icon-projects.svg"); }
-.icon--blog     { -webkit-mask-image: url("../images/icon-blog.svg");      mask-image: url("../images/icon-blog.svg"); }
-.icon--resume   { -webkit-mask-image: url("../images/icon-resume.svg");    mask-image: url("../images/icon-resume.svg"); }
-.icon--mail     { -webkit-mask-image: url("../images/icon-mail.svg");      mask-image: url("../images/icon-mail.svg"); }
+/* Map each icon class to images (CSS in /css, images in /images) */
+.icon--home     { -webkit-mask-image: url("../images/icon-home.svg");     mask-image: url("../images/icon-home.svg"); }
+.icon--user     { -webkit-mask-image: url("../images/icon-user.svg");     mask-image: url("../images/icon-user.svg"); }
+.icon--projects { -webkit-mask-image: url("../images/icon-projects.svg"); mask-image: url("../images/icon-projects.svg"); }
+.icon--blog     { -webkit-mask-image: url("../images/icon-blog.svg");     mask-image: url("../images/icon-blog.svg"); }
+.icon--resume   { -webkit-mask-image: url("../images/icon-resume.svg");   mask-image: url("../images/icon-resume.svg"); }
+.icon--mail     { -webkit-mask-image: url("../images/icon-mail.svg");     mask-image: url("../images/icon-mail.svg"); }
+.icon--vlog     { -webkit-mask-image: url("../images/icon-vlog.svg");     mask-image: url("../images/icon-vlog.svg"); }
+.icon--code     { -webkit-mask-image: url("../images/icon-code.svg");     mask-image: url("../images/icon-code.svg"); }
+.icon--website  { -webkit-mask-image: url("../images/icon-website.svg");  mask-image: url("../images/icon-website.svg"); }
+.icon--book     { -webkit-mask-image: url("../images/icon-book.svg");     mask-image: url("../images/icon-book.svg"); }
 
-/* Brand logo — point to your actual logo file name */
+/* Brand logo */
 .logo--brand    { --size: 32px; -webkit-mask-image: url("../images/logo.svg"); mask-image: url("../images/logo.svg"); }
 
-/* Optional size utilities */
+/* Size utilities */
 .icon-18 { --size: 18px; }
 .icon-24 { --size: 24px; }
 .icon-32 { --size: 32px; }
@@ -220,11 +197,11 @@ main, section {
 
 .grid {
   display: grid;
-  gap: 15px;
+  gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.grid > div {
+.card {
   background: #fff;
   border: 1px solid var(--gold);
   padding: 15px;
@@ -247,8 +224,6 @@ footer {
    ============================== */
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0);
 }
