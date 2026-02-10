@@ -92,10 +92,6 @@ main, section {
   align-items: center;
 }
 
-.change-color {
-   fill: var(--logo-color);
-}
-
 .brand,
 .nav-menu a {
   color: #fff;
@@ -157,6 +153,13 @@ main, section {
   .nav-checkbox:checked ~ .nav-menu {
     display: flex;
   }
+}
+
+/* ==============================
+   Logos and Images
+   ============================== */
+#logo-image {
+   filter: invert(18%) sepia(88%) saturate(3195%) hue-rotate(345deg) brightness(101%) contrast(105%);
 }
 
 /* ==============================
