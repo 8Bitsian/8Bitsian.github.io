@@ -7,18 +7,16 @@
    Theme Variables
    ============================== */
 :root {
-  --bg: #f1f1f1;
-  --text: #0f0242;
-  --heading: #8c52ff;
-  --primary: #8c52ff;
-  --dark: #0f0242;
-  --border: #ffde59;
-  --logo-color: #ffde59;
+  --white: #f1f1f1;
+  --off-white: #faf5e4;
+  --gold: #ffde59;
+  --purple: #8c52ff;
+  --dark: #2e0b70;
 
-  --radius: 6px;
+  --radius: 5px;
   --space: 20px;
   --width: 1000px;
-  --header-h: 72px;
+  --header-h: 75px;
 }
 
 /* ==============================
@@ -32,18 +30,19 @@ body, h1, h2, h3, img, header, nav, main, footer {
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--white);
+  color: var(--dark);
   font-family: "Quicksand", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 img { width: 100%; display: block; }
 
 a {
-  color: var(--primary);
+  color: var(--purple);
   text-decoration: none;
 }
+
 a:hover { text-decoration: underline; }
 
 /* ==============================
@@ -51,14 +50,14 @@ a:hover { text-decoration: underline; }
    ============================== */
 h1, h2, h3 {
   font-family: "Press Start 2P", system-ui;
-  color: var(--heading);
+  color: var(--purple);
   font-weight: 400;
   line-height: 1.25;
 }
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
-h3 { font-size: 1.2rem; }
+h3 { font-size: 1.25rem; }
 
 /* ==============================
    Layout
@@ -92,9 +91,8 @@ main, section {
   align-items: center;
 }
 
-.brand,
-.nav-menu a {
-  color: #fff;
+.brand, .nav-menu a {
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -112,28 +110,26 @@ main, section {
   cursor: pointer;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 22px;
-  height: 2px;
-  background: #fff;
+.hamburger, .hamburger::before, .hamburger::after {
+  width: 25px;
+  height: 5px;
+  background: var(--white);
   display: block;
   position: relative;
 }
-.hamburger::before,
-.hamburger::after {
+
+.hamburger::before, .hamburger::after {
   content: "";
   position: absolute;
   left: 0;
 }
+
 .hamburger::before { top: -6px; }
+
 .hamburger::after  { top: 6px; }
 
 /* Hidden checkbox */
-.nav-checkbox {
-  display: none;
-}
+.nav-checkbox { display: none; }
 
 /* Mobile nav */
 @media (max-width: 768px) {
@@ -156,42 +152,80 @@ main, section {
 }
 
 /* ==============================
-   Logos and Images
+   Logos and Icons
    ============================== */
-#logo-image {
-   filter: invert(18%) sepia(88%) saturate(3195%) hue-rotate(345deg) brightness(101%) contrast(105%);
+
+.logo, .icon { color: var(--gold); }
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
 }
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  vertical-align: -3px;
+  margin-right: 6px;
+}
+
+/* Normalize inline SVG sizing (scales with font-size by default) */
+.logo svg, .icon svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+/* Inherit color for common shapes */
+.logo svg path, .logo svg rect,
+.logo svg circle, .logo svg polygon,
+.icon svg path, .icon svg rect,
+.icon svg circle, .icon svg polygon {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Utility sizes (optional) */
+.icon-18 { font-size: 18px; }
+.icon-24 { font-size: 24px; }
+.icon-32 { font-size: 32px; }
+.logo-24 { font-size: 24px; }
+.logo-32 { font-size: 32px; }
 
 /* ==============================
    Hero / Cards
    ============================== */
 .hero {
   text-align: center;
-  padding: 60px var(--space);
+  padding: 50px var(--space);
   background: #fff;
-  border: 1px solid var(--border);
+  border: 1px solid var(--gold);
   border-radius: var(--radius);
 }
 
 .cta {
   display: inline-block;
-  padding: 10px 24px;
-  margin-top: 16px;
-  background: var(--primary);
+  padding: 10px 25px;
+  margin-top: 15px;
+  background: var(--purple);
   color: #fff;
   border-radius: var(--radius);
 }
 
 .grid {
   display: grid;
-  gap: 16px;
+  gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid > div {
   background: #fff;
-  border: 1px solid var(--border);
-  padding: 16px;
+  border: 1px solid var(--gold);
+  padding: 15px;
   border-radius: var(--radius);
 }
 
@@ -200,9 +234,9 @@ main, section {
    ============================== */
 footer {
   background: var(--dark);
-  color: #fff;
+  color: var(--white);
   text-align: center;
-  padding: 24px 0;
+  padding: 25px 0;
   margin-top: 60px;
 }
 
