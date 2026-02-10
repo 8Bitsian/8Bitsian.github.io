@@ -181,8 +181,8 @@ main, section {
 .hero {
   text-align: center;
   padding: 50px var(--space);
-  background: #fff;
-  border: 1px solid var(--gold);
+  background: var(--white);
+  border: 5px solid var(--gold);
   border-radius: var(--radius);
 }
 
@@ -202,8 +202,8 @@ main, section {
 }
 
 .card {
-  background: #fff;
-  border: 1px solid var(--gold);
+  background: var(--white);
+  border: 5px solid var(--gold);
   padding: 15px;
   border-radius: var(--radius);
 }
