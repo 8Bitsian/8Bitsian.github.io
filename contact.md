@@ -1,7 +1,10 @@
 ---
 layout: default
-title: Socials
+title: Contact
 ---
 
-# Contact
+# Contact Me
+This is my Jekyll site.
+
+# Social Media
 This is my Jekyll site.
