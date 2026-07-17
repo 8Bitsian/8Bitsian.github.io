@@ -1,6 +1,6 @@
-title: 8BitSoftware
+title: "8BitSoftware"
 url: "https://8bitsian.github.io/"
-description: A website built with Markdown
+description: "A website built with Markdown."
 theme: minima
 
 header_pages:
@@ -15,4 +15,4 @@ exclude:
 
 footer:
   copyright: "© 2026 Imani Hollie"
-  text: "Custom footer text"
+  text: "Coding since 2023."
