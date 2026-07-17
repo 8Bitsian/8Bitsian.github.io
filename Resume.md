@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Portfolio
+title: Resume
 ---
 
-# Portfolio
+# Resume
 This is my Jekyll site.
 
 ## Langauges
