@@ -4,7 +4,4 @@ title: Contact
 ---
 
 # Contact Me
-This is my Jekyll site.
-
-## Social Media
-This is my Jekyll site.
+- Direct Links: Include icons for your LinkedIn Profile and GitHub Profile.
