@@ -4,3 +4,8 @@ theme: minima
 
 exclude:
 - README.md
+
+header_pages:
+- index.md
+- about.md
+- contact.md
