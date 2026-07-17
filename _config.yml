@@ -1,5 +1,4 @@
 title: 8BitSoftware
-subtitle: Easy coding.
 url: "https://8bitsian.github.io/"
 description: A website built with Markdown
 theme: minima
@@ -14,3 +13,6 @@ header_pages:
 exclude:
 - README.md
 
+footer:
+  copyright: "© 2026 Imani Hollie"
+  text: "Custom footer text"
