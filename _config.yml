@@ -2,10 +2,10 @@ title: Testing Markdown Files
 description: A website built with Markdown
 theme: minima
 
-exclude:
-- README.md
-
 header_pages:
 - index.md
 - about.md
 - contact.md
+
+exclude:
+- README.md
