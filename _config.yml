@@ -1,6 +1,8 @@
 title: Testing Markdown Files
+url: "https://8bitsian.github.io/"
 description: A website built with Markdown
 theme: minima
+
 
 header_pages:
 - index.md
