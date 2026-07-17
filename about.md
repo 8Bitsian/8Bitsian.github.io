@@ -4,4 +4,5 @@ title: About
 ---
 
 # About Me
-This is my Jekyll site.
+- Background: Relevant details about you
+- Categories: A few things maybe degree progress, tutorials, side projects, thoughts on tech, etc.
