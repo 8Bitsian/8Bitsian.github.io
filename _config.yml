@@ -1,7 +1,7 @@
 title: "8BitSoftware"
 url: "https://8bitsian.github.io/"
 description: "A website built with Markdown."
-theme: minima
+theme: sleek
 
 header_pages:
 - index.md
