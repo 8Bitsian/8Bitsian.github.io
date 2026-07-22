@@ -1,6 +1,8 @@
 ---
-layout: default
-title: About
+title: "About"
+layout: Post
+content-type: "static"
+permalink: /about
 ---
 
 # About Me
