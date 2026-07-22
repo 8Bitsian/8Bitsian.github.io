@@ -6,7 +6,6 @@ title: Home
 
 Hello, I am Imani Hollie (8BitSoftware) and I am a Computer Programming student documenting my software development journey.
 
-This is my Jekyll site and it is currently being hosted in a repository on my GitHub.
+This is my Jekyll site and it is currently being hosted in a repository on my [GitHub](https://github.com/8Bitsian).
 
-# Contact Me
-- Direct Links: Include icons for your LinkedIn Profile and GitHub Profile.
+You can contact me on [BlueSky](https://bsky.app/profile/8bitsoftware.bsky.social).
