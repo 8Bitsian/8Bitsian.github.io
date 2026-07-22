@@ -13,7 +13,7 @@ This is my website which is currently being hosted on a repository on my [GitHub
 I implemented [Obsidian](https://obsidian.md/) into my software design and development process for documentation purposes and general note-taking, so this repository has been great for creating a professional looking website while using the Markdown files I have nested away.
 
 ## Contact Me
-> [![stack-overflow][1]](https://stackoverflow.com/users/32219858/8bitsian)
+[![stack-overflow][1]](https://stackoverflow.com/users/32219858/8bitsian)
 [![bluesky][2]](https://bsky.app/profile/8bitsoftware.bsky.social)
 [![twitch][3]](https://www.twitch.tv/8bitsoftware)
 [![youtube][4]](https://www.youtube.com/@8BitSoftware)<br/>
