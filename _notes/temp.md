@@ -1,3 +1,9 @@
+---
+title: "My First Note"
+date: 2026-07-21
+feed: "show"
+---
+
 # 8BitSoftware Website
 A repository for hosting my website about my journey with software development.
 
