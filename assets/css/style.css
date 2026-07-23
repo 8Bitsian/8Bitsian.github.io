@@ -31,12 +31,12 @@
 
 /* Dark theme variables */
 [data-theme="dark"] {
-  --bg: #18181C;
-  --bg2: #23232A;
-  --text: #D6D6D6;
+  --bg: #1D1B1F;
+  --bg2: #27242A;
+  --text: #D7D2E2;
   --title: #FFFFFF;
-  --brand: #3AC9B0;
-  --border: #33343A;
+  --brand: #FFDE59;
+  --border: #3A353E;
 }
 
 /* smooth transition on theme switching */
