@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-  --bg: #F7F2FF;
+  --bg: #FCFAFF;
   --bg2: #E7DBFF;
   --text: #3A353E;
   --title: #573992;
@@ -31,12 +31,12 @@
 
 /* Dark theme variables */
 [data-theme="dark"] {
-  --bg: #1D1B1F;
-  --bg2: #27242A;
+  --bg: #2A2530;
+  --bg2: #342A48;
   --text: #D7D2E2;
-  --title: #FFFFFF;
+  --title: #FCFAFF;
   --brand: #FFDE59;
-  --border: #3A353E;
+  --border: #8A73B8;
 }
 
 /* smooth transition on theme switching */
