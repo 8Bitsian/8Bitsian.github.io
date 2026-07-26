@@ -1,31 +1,38 @@
-# 8BitSoftware Website
-A repository for hosting my website about my journey with software development.
+<!-- Get more badges from https://shields.io/ -->
 
-## Pages in my website
+## 👩🏽‍💻 Description
+>🌐 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
+>📎 This repository was forked from [Jekyll-Garden](https://github.com/hfactor/jekyll-garden) by [@hfactor](https://github.com/hfactor).</br>
+
+<!--
+  Website Badge, GitHub Badge
+  Total Contributions Badge, Last Commit Badge, 
+-->
+
+### 📄 Website Pages
 Below are a list of pages included within my website:
+> Homepage (index.md)</br>
+> About Me (about.md)</br>
+> Blog (blog.md)</br>
+> Notes (notes.md)
 
-### Homepage (index.md)
-- Introduction: Hello, I am Imani Hollie (8Bitsian) and I am a Computer Science student at Gwinnett Technical College, documenting my backend journey.
-- Call to Action: Links to Projects Page
+## 🛠️ Tech & Tools
+> ⚙️ I used the OS Linux Mint, Figma, Geany, Obsidian, and GitHub.</br></br>
+[![Linux Mint Badge][3]](https://www.linuxmint.com/)
+[![Figma Badge][4]](https://www.figma.com/)
+[![Geany Badge][5]](https://www.geany.org/)
+[![Obsidian Badge][6]](https://obsidian.md/)
 
-### About (about.md)
-- Background: Relevant details about you
-- Education: Details mentioning expected graduation date and relevant coursework
-- Achievements: Details mentioning achievements
-- Tech Stack: Grid of languages (Python, Java, etc.) and tools you have mastered (Git, JetBrains IDE, etc.)
+> 🗣️ I used MarkDown Files, yml Files, JavasScript, HTML5, and CSS3.</br></br>
+[![HTML5 Badge][0]](https://www.w3.org/html/)
+[![CSS Badge][1]](https://www.w3.org/Style/CSS/Overview.en.html)
+[![JavaScript Badge][2]](https://developer.mozilla.org/en-US/docs/Web/JavaScript)</br>
 
-### Blog (blog.md)
-- Categories: A few things maybe degree progress, tutorials, side projects, thoughts on tech, etc.
-
-### Projects (portfolio.md)
-- Project Cards: Include a short summary of the project, link the GitHub repo, and describe what you have learned from it
-- Live Demos: Link YouTube videos with 5-minute interviews or YouTube videos covering the project
-
-### Resume Page (resume.md)
-- Accessibility: Provide an on-page HTML version for quick reading and a downloadable PDF link for recruiters.
-
-### Contact Page (contact.md)
-- Direct Links: Include icons for your LinkedIn Profile and GitHub Profile.
-
-### Policy Page (privacy.md)
-- Compliance: Even for a personal site, if you use Google Analytics or a contact form, you must disclose what data you collect. 
+<!-- Links placed here for the file's readability -->
+[3]: https://img.shields.io/badge/Linux_Mint-2026?logo=linuxmint&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[4]: https://img.shields.io/badge/Figma-2026?logo=figma&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[5]: https://img.shields.io/badge/Geany-2026?logo=github&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[6]: https://img.shields.io/badge/Obsidian-2026?logo=obsidian&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[0]: https://img.shields.io/badge/HTML5-2026?logo=html5&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[1]: https://img.shields.io/badge/CSS-2026?logo=css&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[2]: https://img.shields.io/badge/JavaScript-2026?logo=javascript&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
