@@ -1,6 +1,5 @@
 <!-- Get more badges from https://shields.io/ -->
 <!-- Get logos from https://simpleicons.org/ -->
-<!-- Colors: &labelColor=8C52FF&color=FFDE59 -->
 
 ## 🌐 Description
 >💻 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
@@ -26,7 +25,6 @@
 [![Linux Mint OS Badge][11]](https://www.linuxmint.com/)
 ![GitHub Badge][21]
 ![GitHub Codespaces Badge][22]
-![GitHub Actions Badges][23]
 [![Obsidian Badge][14]](https://obsidian.md/)
 [![Figma Badge][12]](https://www.figma.com/)
 
@@ -44,7 +42,7 @@ Obsidian: obsidian
 ![Top Langauge Badge][7]</br>
 [![HTML5 Badge][15]](https://www.w3.org/html/)
 [![CSS Badge][16]](https://www.w3.org/Style/CSS/Overview.en.html)
-[![JavaScript Badge][17]](https://developer.mozilla.org/en-US/docs/Web/JavaScript)</br>
+[![JavaScript Badge][17]](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![TypeScript Badge][18]
 ![Ruby Badge][19]
 ![Docker File Badge][20]
@@ -77,5 +75,3 @@ dockerfile: docker
 [20]: https://img.shields.io/badge/DockerFile-2026?style=flat&logo=docker&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [21]: https://img.shields.io/badge/GitHub-2026?style=flat&logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [22]: https://img.shields.io/badge/GitHub%20Pages-2026?style=flat&logo=githubpages&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[23]: https://img.shields.io/badge/GitHub%20Actions-2026?style=flat&logo=githubactions&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-
