@@ -1,8 +1,8 @@
 <!-- Get more badges from https://shields.io/ -->
 <!-- Colors: &labelColor=8C52FF&color=FFDE59 -->
 
-## 👩🏽‍💻 Description
->🌐 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
+## 🌐 Description
+>💻 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
 >📎 This repository was forked from [Jekyll-Garden](https://github.com/hfactor/jekyll-garden) by [@hfactor](https://github.com/hfactor).</br></br>
 [![Website Check Badge][0]](https://8bitsian.github.io/)
 ![Repo Size Badge][5]
@@ -16,10 +16,10 @@
 
 ### 📄 Website Pages
 Below are a list of pages included within my website:
-> Homepage (index.md)</br>
-> About Me (about.md)</br>
-> Blog (blog.md)</br>
-> Notes (notes.md)
+> 🏠 Homepage [(index.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/index.md) is the langing page for my website. Here you can look through my notes through the search function.</br></br>
+> 👩🏽‍💻 About Me [(about.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/about.md) gives a few details about myself and my work. Here you can get some insight to what I do and who I am.</br></br>
+> 🗣️ Blog [(blog.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/blog.md) is where I post blurbs about my work and furture projects. I also post essays on tech and my thoughts on life.</br></br>
+> 📔 Notes [(notes.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/notes.md) is a landing page to find all of my notes.
 
 ## 🛠️ Tech & Tools
 > ⚙️ I used the OS Linux Mint, Figma, Geany, Obsidian, and GitHub.</br></br>
