@@ -12,6 +12,9 @@
 ![Repo Size Badge][14]
 ![Total Languages Badge][9]
 ![Top Langauge Badge][10]
+![GitHub Forks][15]
+![GitHub Stars][16]
+![GitHub Eyes][17]
 
 ### 📄 Website Pages
 Below are a list of pages included within my website:
@@ -48,3 +51,6 @@ Below are a list of pages included within my website:
 [12]: https://img.shields.io/github/issues/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Issues&labelColor=8C52FF&color=FFDE59
 [13]: https://img.shields.io/website?url=https%3A%2F%2F8bitsian.github.io%2F&up_message=Online&up_color=FFDE59&down_message=Offline&down_color=FFDE59&style=flat&label=Website%20Status&labelColor=8C52FF&color=FFDE59
 [14]: https://img.shields.io/github/repo-size/8Bitsian/8Bitsian.github.io?style=flat&label=Repository%20Size&labelColor=8C52FF&color=FFDE59
+[15]: https://img.shields.io/github/forks/8Bitsian/8Bitsian.github.io?style=flat&label=Forks&labelColor=8C52FF&color=FFDE59
+[16]: https://img.shields.io/github/stars/8Bitsian/8Bitsian.github.io?style=flat&label=Stars&labelColor=8C52FF&color=FFDE59
+[17]: https://img.shields.io/github/watchers/8Bitsian/8Bitsian.github.io?style=flat&label=Watchers&labelColor=8C52FF&color=FFDE59
