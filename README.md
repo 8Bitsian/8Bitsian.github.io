@@ -1,4 +1,5 @@
 <!-- Get more badges from https://shields.io/ -->
+<!-- Get logos from https://simpleicons.org/ -->
 <!-- Colors: &labelColor=8C52FF&color=FFDE59 -->
 
 ## 🌐 Description
@@ -22,17 +23,32 @@
 
 ## 🛠️ Tech & Tools
 > ⚙️ I used the OS Linux Mint, Figma, Geany, Obsidian, and GitHub.</br></br>
-[![Linux Mint Badge][11]](https://www.linuxmint.com/)
+[![Linux Mint OS Badge][11]](https://www.linuxmint.com/)
 [![Figma Badge][12]](https://www.figma.com/)
-[![Geany Badge][13]](https://www.geany.org/)
 [![Obsidian Badge][14]](https://obsidian.md/)
+
+<!--
+Linux Mint OS: linuxmint
+Figma: figma
+GitHub : github
+GitHub Codespaces : githubpages
+GitHub Actions: githubactions
+Obsidian: obsidian
+-->
 
 > 🗣️ I used MarkDown Files, yml Files, JavasScript, HTML5, and CSS3.</br></br>
 ![Total Languages Badge][6]
-![Top Langauge Badge][7]
+![Top Langauge Badge][7]</br>
 [![HTML5 Badge][15]](https://www.w3.org/html/)
 [![CSS Badge][16]](https://www.w3.org/Style/CSS/Overview.en.html)
 [![JavaScript Badge][17]](https://developer.mozilla.org/en-US/docs/Web/JavaScript)</br>
+![TypeScript Badge][18]
+![Ruby Badge][19]
+![Docker File Badge][20]
+<!--
+Ruby: ruby
+dockerfile: docker
+-->
 
 <!-- Links placed here for the file's readability -->
 [0]: https://img.shields.io/website?url=https%3A%2F%2F8bitsian.github.io%2F&up_message=Online&up_color=FFDE59&down_message=Offline&down_color=FFDE59&style=flat&label=Website%20Status&labelColor=8C52FF&color=FFDE59
@@ -50,7 +66,10 @@
 [12]: https://img.shields.io/badge/Figma-2026?logo=figma&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [13]: https://img.shields.io/badge/Geany-2026?logo=github&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [14]: https://img.shields.io/badge/Obsidian-2026?logo=obsidian&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[15]: https://img.shields.io/badge/HTML5-2026?logo=html5&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[16]: https://img.shields.io/badge/CSS-2026?logo=css&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[17]: https://img.shields.io/badge/JavaScript-2026?logo=javascript&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[15]: https://img.shields.io/badge/HTML5-2026?style=flat&logo=html5&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[16]: https://img.shields.io/badge/CSS3-2026?style=flat&logo=css&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[17]: https://img.shields.io/badge/JavaScript-2026?style=flat&logo=javascript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[18]: https://img.shields.io/badge/TypeScript-2026?style=flat&logo=typescript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[19]: https://img.shields.io/badge/Ruby-2026?style=flat&logo=ruby&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[20]: https://img.shields.io/badge/DockerFile-2026?style=flat&logo=docker&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 
