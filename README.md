@@ -4,14 +4,14 @@
 ## 👩🏽‍💻 Description
 >🌐 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
 >📎 This repository was forked from [Jekyll-Garden](https://github.com/hfactor/jekyll-garden) by [@hfactor](https://github.com/hfactor).</br></br>
+![Website Check Badge][13]
+![W3C Check Badge][11]
+![Total Issues][12]
 ![Total Commit Badge][7]
-![Last Commit Basge][8]
-
-
-<!--
-  Website Badge, GitHub Badge
-  Total Contributions Badge, Last Commit Badge, 
--->
+![Last Commit Badge][8]
+![Repo Size Badge][14]
+![Total Languages Badge][9]
+![Top Langauge Badge][10]
 
 ### 📄 Website Pages
 Below are a list of pages included within my website:
@@ -42,3 +42,9 @@ Below are a list of pages included within my website:
 [6]: https://img.shields.io/badge/JavaScript-2026?logo=javascript&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [7]: https://img.shields.io/github/commit-activity/t/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Commits&labelColor=8C52FF&color=FFDE59
 [8]: https://img.shields.io/github/last-commit/8Bitsian/8Bitsian.github.io?style=flat&label=Last%20Commit&labelColor=8C52FF&color=FFDE59
+[9]: https://img.shields.io/github/languages/count/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Languages&labelColor=8C52FF&color=FFDE59
+[10]: https://img.shields.io/github/languages/top/8Bitsian/8Bitsian.github.io?style=flat&logo=css&logoColor=FFDE59&labelColor=8C52FF&color=FFDE59
+[11]: https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2F8bitsian.github.io%2F&style=flat&label=W3C&labelColor=8C52FF&color=FFDE59
+[12]: https://img.shields.io/github/issues/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Issues&labelColor=8C52FF&color=FFDE59
+[13]: https://img.shields.io/website?url=https%3A%2F%2F8bitsian.github.io%2F&up_message=Online&up_color=FFDE59&down_message=Offline&down_color=FFDE59&style=flat&label=Website%20Status&labelColor=8C52FF&color=FFDE59
+[14]: https://img.shields.io/github/repo-size/8Bitsian/8Bitsian.github.io?style=flat&label=Repository%20Size&labelColor=8C52FF&color=FFDE59
