@@ -14,12 +14,6 @@
 ![W3C Check Badge][1]
 ![Total Issues][2]</br>
 
-### 📄 Website Pages
-> 🏠 Homepage [(index.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/index.md) is the langing page for my website. Here you can look through my notes through the search function.</br></br>
-> 👩🏽‍💻 About Me [(about.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/about.md) gives a few details about myself and my work. Here you can get some insight to what I do and who I am.</br></br>
-> 🗣️ Blog [(blog.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/blog.md) is where I post blurbs about my work and furture projects. I also post essays on tech and my thoughts on life.</br></br>
-> 📔 Notes [(notes.md)](https://github.com/8Bitsian/8Bitsian.github.io/blob/main/pages/notes.md) is a landing page to find all of my notes.
-
 ## 🛠️ Tech & Tools
 > ⚙️ I used the OS Linux Mint, Figma, Geany, Obsidian, and GitHub.</br></br>
 [![Linux Mint OS Badge][11]](https://www.linuxmint.com/)
