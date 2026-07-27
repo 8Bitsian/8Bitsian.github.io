@@ -39,7 +39,7 @@ Obsidian: obsidian
 [![JavaScript Badge][17]](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![TypeScript Badge][18]
 ![Ruby Badge][19]
-![Docker File Badge][20]
+![Dockerfile Badge][20]
 <!--
 Ruby: ruby
 dockerfile: docker
@@ -66,6 +66,6 @@ dockerfile: docker
 [17]: https://img.shields.io/badge/JavaScript-2026?style=flat&logo=javascript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [18]: https://img.shields.io/badge/TypeScript-2026?style=flat&logo=typescript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [19]: https://img.shields.io/badge/Ruby-2026?style=flat&logo=ruby&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[20]: https://img.shields.io/badge/DockerFile-2026?style=flat&logo=docker&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[20]: https://img.shields.io/badge/Dockerfile-2026?style=flat&logo=docker&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [21]: https://img.shields.io/badge/GitHub-2026?style=flat&logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [22]: https://img.shields.io/badge/GitHub%20Pages-2026?style=flat&logo=githubpages&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
