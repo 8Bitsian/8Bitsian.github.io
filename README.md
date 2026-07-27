@@ -24,8 +24,11 @@
 ## 🛠️ Tech & Tools
 > ⚙️ I used the OS Linux Mint, Figma, Geany, Obsidian, and GitHub.</br></br>
 [![Linux Mint OS Badge][11]](https://www.linuxmint.com/)
-[![Figma Badge][12]](https://www.figma.com/)
+![GitHub Badge][21]
+![GitHub Codespaces Badge][22]
+![GitHub Actions Badges][23]
 [![Obsidian Badge][14]](https://obsidian.md/)
+[![Figma Badge][12]](https://www.figma.com/)
 
 <!--
 Linux Mint OS: linuxmint
@@ -72,4 +75,7 @@ dockerfile: docker
 [18]: https://img.shields.io/badge/TypeScript-2026?style=flat&logo=typescript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [19]: https://img.shields.io/badge/Ruby-2026?style=flat&logo=ruby&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [20]: https://img.shields.io/badge/DockerFile-2026?style=flat&logo=docker&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[21]: https://img.shields.io/badge/GitHub-2026?style=flat&logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[22]: https://img.shields.io/badge/GitHub%20Pages-2026?style=flat&logo=githubpages&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[23]: https://img.shields.io/badge/GitHub%20Actions-2026?style=flat&logo=githubactions&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 
