@@ -5,18 +5,22 @@ categories: [jekyll, digital-garden]
 tags: [linuxmint, linuxdistros, linux, opensource]
 ---
 
-I have an old HP 14-dq0052dx model laptop that originally ran Windows 11 that I got from Amazon to supplement my most basic needs while I am in school. It has 32 GB of RAM but has soldered on 64 GB of memory. I am supplementing with an SD card with 128 GB of storage space for any files that I need to work with.
+I have an old HP 14-dq0000dx model laptop that originally ran Windows 11 that I got from Amazon to supplement my most basic needs while I'm in school. I'm talking browser and coding only because, while it has 32GB of RAM, it only has 64GB eMMC of memory that's not upgradable. Currently, I am supplementing with an SD card with 128GB of storage space for any files that I need to work with and it's been able to serve it's purpose so far without become e-waste.
 
-Being that my laptop isn't upgradable without having to work with soldering, I thought I was stuck with what essentially became a brick. Windows 11 was basically bloatware. 
+That being said, I didn't initially realize that that was an issue until I started noticing how slow my laptop was while running Windows 11, Google Chrome, and VSCode, as my IDE of choice at the time, windows and apps would take forever to open, and when they did they were so slow that I could feel the laptop struggling with any "intensive tasks", like opening multiple apps at the same time or having multiple tabs open - so task manager became my best friend during those times.
 
-## What Makes It Special
+And, while I did use my laptop a lot when I initially bought it thanks to the touchscreen feature, the added bloat of the push Microsoft made to put CoPilot on every one of the Windows machines I had was really something that slowed it down. And no matter how many of the extra apps that I deleted from me (1) not using them and (2) not having the extra space, eventually being that my laptops storage isn't upgradable, I was stuck with what essentially an expensive brick as Windows 11 was basically bloatware that made my laptop unusable. Every time I tried to uninstall and reinstall Windows 11 OS, I would get really frustrated from how Microsoft would try to squeeze every bit of data that they could about me and then put ad after ad in my face upon installation and initial startup.
 
-- **Obsidian Integration**: Use your existing Obsidian vault structure
-- **Wiki-style Links**: Connect ideas with `[[note title]]` syntax
-- **Clean Design**: Minimal, typography-focused layout
-- **Fast Performance**: Static site generation for speed
-- **Search Functionality**: Full-text search across all content
+Eventually, I became so fed up with my laptop running slow I switched to an ASUS Vivobook Go in Pink because, (1) it was a gift and (2) it ran far smoother than mine old one, which wasn't saying much because that laptop also struggled to keep up with my needs as it also ran Windows 11.
 
----
+Fast forward to July 2026 and I kept on getting videos on Linux pop up on my For You page on YouTube since I've been super into Linux distros lately and wanted to try one for myself without risking my main PC. I dusted off my old laptop and did the song and dance of trying to find something lightweight and beginner friendly for an introduction into Linux. I end up finding out about [Linux Mint](https://www.linuxmint.com/download.php), more specifically, I find the [XFCE Edition](https://www.linuxmint.com/edition.php?id=327), which is quoted to be a "lightweight desktop environment" that is "lighter on resource usage."
 
-*Start building your own digital garden and see how your ideas connect and flourish over time.* 
+The process of installing Linux Mint was a bit of a hassle, mostly to my impatience and not following instructions initially, but once I was able to wipe Windows 11 off of my laptop and boot into Linux Mint I could instantly feel the difference in performance and overall quality between the two.
+
+Even the setup for installing Linux Mint was night and day, as it gave the option to opt out of signing into my WiFi without me having to access a terminal to bypass any creepy data collection services, at this point, that Windows 11 makes you do. Right after installation, the only three things it asked of my, which were really two, were (1) what's your username, which also became my laptop's name, and (2) what's a good password for you. And then I was in.
+
+Boom. Done. Now all I had to do download any updates, customize a bit, get my apps, and I was good to go.
+
+Admittedly, I will say that learning anything new will take some time to get used to. I've been a Windows user since version 10 and have been with the Windows OS up til this point so I didn't really have a frame of reference, other than the occasional video popping up on my feed, for how other operating systems compared. I just knew that Mac OS was mostly for creatives, Windows for general use, and Linux for wizards probably ran Arch and riced their environments. But, the switch so far has been so smooth it's not even funny. 
+
+Off rip because the XFCE Edition is so lightweight, I was able to install more than one application to my main storage (again, 64GB) and my laptop didn't run slow. It just booted them up and I was free to do whatever I wanted - whether record with OBS Studio, code with Geany, write with Obsidian, the possibilities were endless. I ditched Google Chrome for Firefox since I had made the switch earlier on my main PC and was surprised to find that was the initial browser already preinstalled with the system. Everything that I had been running on my main PC was either already available to me here, or I was able to find and open-source alternative that was probably more lightweight and wasn't running telemetry data runs back and forth to big corporations.
