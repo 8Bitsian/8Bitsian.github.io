@@ -1,6 +1,8 @@
 <!-- Get more badges from https://shields.io/ -->
 <!-- Get logos from https://simpleicons.org/ -->
 
+[![Banner](assets/img/Banner.png)](https://8bitsian.github.io/)
+
 ## 🌐 Description
 >💻 I wanted to make a website to show off my repositories and projects while giving an in-depth look into my workflow through a blog. I also wanted to learn more about how to use MarkDown files when creating websites as I have beocme increasingly familar with Obsidian as my main notetaking application.</br></br>
 >📎 This repository was forked from [Jekyll-Garden](https://github.com/hfactor/jekyll-garden) by [@hfactor](https://github.com/hfactor).</br></br>
