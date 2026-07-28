@@ -56,7 +56,7 @@
 [4]: https://custom-icon-badges.demolab.com/github/watchers/8Bitsian/8Bitsian.github.io?style=flat&logo=eye&logoColor=FFFFF0&label=Watchers&labelColor=8C52FF&color=FFDE59
 [5]: https://custom-icon-badges.demolab.com/github/commit-activity/t/8Bitsian/8Bitsian.github.io?style=flat&logo=git-commit&logoColor=FFFFF0&label=Total%20Commits&labelColor=8C52FF&color=FFDE59
 [6]: https://custom-icon-badges.demolab.com/github/last-commit/8Bitsian/8Bitsian.github.io?display_timestamp=author&style=flat&logo=git-merge&logoColor=FFFFF0&label=Last%20Commit&labelColor=8C52FF&color=FFDE59
-[7]: https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2F8bitsian.github.io%2F&style=flat&label=W3C&labelColor=8C52FF&color=FFDE59
+[7]: https://custom-icon-badges.demolab.com/w3c-validation/html?targetUrl=https%3A%2F%2F8bitsian.github.io%2F&style=flat&logo=globe&logoColor=FFFFF0&label=W3C%20Check&labelColor=8C52FF&color=FFDE59
 [8]: https://custom-icon-badges.demolab.com/github/issues/8Bitsian/8Bitsian.github.io?style=flat&logo=issue-opened&logoColor=FFFFF0&label=Total%20Issues&labelColor=8C52FF&color=FFDE59
 
 <!-- Operating Systems -->
@@ -70,8 +70,12 @@
 [14]: https://img.shields.io/badge/GitHub%20Pages-2026?style=flat&logo=githubpages&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 
 <!-- Programming Languages -->
-[15]: https://img.shields.io/github/languages/count/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Languages&labelColor=8C52FF&color=FFDE59
-[16]: https://img.shields.io/github/languages/top/8Bitsian/8Bitsian.github.io?style=flat&label=Top%20Lang%20-%20CSS&labelColor=8C52FF&color=FFDE59
+[15]: https://custom-icon-badges.demolab.com/github/languages/count/8Bitsian/8Bitsian.github.io?style=flat&logo=code-square&logoColor=FFFFF0&label=Total%20Languages&labelColor=8C52FF&color=FFDE59
+
+
+[16]: https://custom-icon-badges.demolab.com/github/languages/top/8Bitsian/8Bitsian.github.io?style=flat&logo=code-square&logoColor=FFFFF0&label=Top%20Language%20-%20CSS&labelColor=8C52FF&color=FFDE59
+
+
 [17]: https://img.shields.io/badge/HTML5-2026?style=flat&logo=html5&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [18]: https://img.shields.io/badge/CSS3-2026?style=flat&logo=css&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [19]: https://img.shields.io/badge/JavaScript-2026?style=flat&logo=javascript&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
