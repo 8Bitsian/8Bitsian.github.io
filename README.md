@@ -42,14 +42,14 @@
 
 <!-- Links placed here for the file's readability -->
 <!-- Social Media -->
-[website]: https://img.shields.io/badge/My_Website-2026?logo=firefox&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[website]: https://img.shields.io/badge/My_Website-2026?logo=firefoxbrowser&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [overflow]: https://img.shields.io/badge/Stack_Overflow-2026?logo=stackoverflow&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [bluesky]: https://img.shields.io/badge/BlueSky-2026?logo=bluesky&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [twitch]: https://img.shields.io/badge/Twitch-2026?logo=twitch&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [youtube]: https://img.shields.io/badge/YouTube-2026?logo=youtube&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 
 <!-- Statistics -->
-[0]: https://img.shields.io/website?url=https%3A%2F%2F8bitsian.github.io%2F&up_message=Online&up_color=FFDE59&down_message=Offline&down_color=FFDE59&style=flat&label=Website%20Status&labelColor=8C52FF&color=FFDE59
+[0]: https://custom-icon-badges.demolab.com/website?url=https%3A%2F%2F8bitsian.github.io%2F&up_message=Online&up_color=FFDE59&down_message=Offline&down_color=FFDE59&style=flat&logo=browser&logoColor=FFFFF0&label=Website%20Status&labelColor=8C52FF&color=FFDE59
 [1]: https://custom-icon-badges.demolab.com/github/repo-size/8Bitsian/8Bitsian.github.io?style=flat&logo=repo&logoColor=FFFFF0&label=Repository%20Size&labelColor=8C52FF&color=FFDE59
 [2]: https://custom-icon-badges.demolab.com/github/forks/8Bitsian/8Bitsian.github.io?style=flat&logo=repo-forked&logoColor=FFFFF0&label=Forks&labelColor=8C52FF&color=FFDE59
 [3]: https://custom-icon-badges.demolab.com/github/stars/8Bitsian/8Bitsian.github.io?style=flat&logo=star&logoColor=FFFFF0&label=Stars&labelColor=8C52FF&color=FFDE59
@@ -57,7 +57,7 @@
 [5]: https://custom-icon-badges.demolab.com/github/commit-activity/t/8Bitsian/8Bitsian.github.io?style=flat&logo=git-commit&logoColor=FFFFF0&label=Total%20Commits&labelColor=8C52FF&color=FFDE59
 [6]: https://custom-icon-badges.demolab.com/github/last-commit/8Bitsian/8Bitsian.github.io?display_timestamp=author&style=flat&logo=git-merge&logoColor=FFFFF0&label=Last%20Commit&labelColor=8C52FF&color=FFDE59
 [7]: https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2F8bitsian.github.io%2F&style=flat&label=W3C&labelColor=8C52FF&color=FFDE59
-[8]: https://img.shields.io/github/issues/8Bitsian/8Bitsian.github.io?style=flat&label=Total%20Issues&labelColor=8C52FF&color=FFDE59
+[8]: https://custom-icon-badges.demolab.com/github/issues/8Bitsian/8Bitsian.github.io?style=flat&logo=issue-opened&logoColor=FFFFF0&label=Total%20Issues&labelColor=8C52FF&color=FFDE59
 
 <!-- Operating Systems -->
 [9]: https://img.shields.io/badge/Linux_Mint-2026?logo=linuxmint&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
